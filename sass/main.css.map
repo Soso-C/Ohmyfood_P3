@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,6CAA6C;ACA7C,OAAO,CAAC,6FAAI",
     "sources": [
-        "main.scss"
+        "main.scss",
+        "utils/_variables.scss",
+        "base/_typography.scss"
     ],
     "names": [],
     "file": "main.css"
