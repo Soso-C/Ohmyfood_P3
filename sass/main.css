@@ -1,14 +1,38 @@
 /* Color Primaire / Secondaire / Tertiaire */
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
-.heading__logo {
-  font-size: 0.5em;
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px auto;
+}
+
+.heading__top__pic {
+  font-size: 1em;
 }
 
 .heading__loc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: grey;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lightgray;
 }
 /*# sourceMappingURL=main.css.map */
