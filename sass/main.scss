@@ -75,5 +75,11 @@ a {
         border-radius: 30px;
         margin: 0 auto;
         margin-bottom: 2em;
+        &__icon {
+            margin: 0 2em;
+        }
+        &__subtitle {
+            font-weight: bold;
+        }
     }
 }
