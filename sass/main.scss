@@ -1,5 +1,9 @@
 @import "./utils/variables";
 @import "./base/typography";
+a {
+    text-decoration: none;
+}
+
 .heading {
     text-align: center;
     &__top {
@@ -15,26 +19,26 @@
         background-color: lightgray;
         height: 45px;
         i {
-            margin-left: 4em;
+            margin: 0;
         }
-        &__input {
+        p {
             color: black;
-            background-color: lightgray;
             font-weight: bold;
             font-size: 1em;
-            border: none;
-            outline: none;
-            margin-left: 1.5em;
+            margin-left: 1em;
         }
     }
     &__content {
-        padding: 15px auto;
+        background-color: rgba(211, 211, 211, 0.493);
+        padding-bottom: 2em;
         h1 {
-            font-size: 2em;
+            font-size: 1.8em;
             font-weight: bold;
-            padding: 0.3em 1em;
+            padding: 0.8em 1em 0.8em 1em;
+            margin: 0;
         }
         h3 {
+            margin-top: 0;
             margin-bottom: 2em;
         }
         .btn {
@@ -49,5 +53,27 @@
             height: 50px;
             cursor: pointer;
         }
+    }
+}
+
+.fonc {
+    &__title {
+        font-size: 1em;
+        padding-left: 1em;
+    }
+    &__bloc {
+        display: flex;
+        flex-direction: column;
+    }
+    &__element {
+        display: flex;
+        align-items: center;
+        color: black;
+        height: 80px;
+        width: 90%;
+        background-color: rgba(128, 128, 128, 0.705);
+        border-radius: 30px;
+        margin: 0 auto;
+        margin-bottom: 2em;
     }
 }

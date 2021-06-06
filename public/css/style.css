@@ -1,8 +1,13 @@
 /* Color Primaire / Secondaire / Tertiaire */
+/**/
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 * {
   font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 .heading {
@@ -22,26 +27,26 @@
   height: 45px;
 }
 .heading__search i {
-  margin-left: 4em;
+  margin: 0;
 }
-.heading__search__input {
+.heading__search p {
   color: black;
-  background-color: lightgray;
   font-weight: bold;
   font-size: 1em;
-  border: none;
-  outline: none;
-  margin-left: 1.5em;
+  margin-left: 1em;
 }
 .heading__content {
-  padding: 15px auto;
+  background-color: rgba(211, 211, 211, 0.493);
+  padding-bottom: 2em;
 }
 .heading__content h1 {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: bold;
-  padding: 0.3em 1em;
+  padding: 0.8em 1em 0.8em 1em;
+  margin: 0;
 }
 .heading__content h3 {
+  margin-top: 0;
   margin-bottom: 2em;
 }
 .heading__content .btn {
@@ -55,6 +60,26 @@
   width: 200px;
   height: 50px;
   cursor: pointer;
+}
+
+.fonc__title {
+  font-size: 1em;
+  padding-left: 1em;
+}
+.fonc__bloc {
+  display: flex;
+  flex-direction: column;
+}
+.fonc__element {
+  display: flex;
+  align-items: center;
+  color: black;
+  height: 80px;
+  width: 90%;
+  background-color: rgba(128, 128, 128, 0.705);
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-bottom: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */
