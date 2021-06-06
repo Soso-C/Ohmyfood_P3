@@ -82,6 +82,8 @@ a {
   margin-bottom: 2em;
 }
 .fonc__element__icon {
+  height: 16px;
+  width: 16px;
   margin: 0 2em;
 }
 .fonc__element__subtitle {
