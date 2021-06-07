@@ -1,8 +1,12 @@
 @import "./utils/variables";
 @import "./base/typography";
+@import "./utils/mixins";
 a {
     text-decoration: none;
 }
+
+
+/* Header */
 
 .heading {
     text-align: center;
@@ -45,21 +49,22 @@ a {
             color: #fff;
             font-weight: 600;
             font-size: 1em;
-            text-align: center;
-            background-color: $color_sec;
+            background: linear-gradient(180deg, $color_sec, $color_pri);
             border-radius: 30px;
             border: none;
-            width: 200px;
+            width: 205px;
             height: 50px;
             cursor: pointer;
         }
     }
 }
 
+
+/* Fonctionnement */
+
 .fonc {
     &__title {
-        font-size: 1em;
-        padding-left: 1em;
+        @include title;
     }
     &__bloc {
         display: flex;
@@ -69,19 +74,47 @@ a {
         display: flex;
         align-items: center;
         color: black;
-        height: 80px;
+        height: 75px;
         width: 90%;
-        background-color: rgba(128, 128, 128, 0.705);
+        background-color: rgba(128, 128, 128, 0.123);
         border-radius: 30px;
         margin: 0 auto;
         margin-bottom: 2em;
         &__icon {
             height: 16px;
             width: 16px;
+            color: gray;
             margin: 0 2em;
         }
         &__subtitle {
             font-weight: bold;
+        }
+    }
+}
+
+
+/* Restaurant */
+
+.restaurant {
+    background-color: lightgray;
+    &__title {
+        @include title;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__card {
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            background-color: #fff;
+            border-bottom: 20px;
+            margin-bottom: 1em;
+            &__pic {
+                height: 250px;
+                width: 100%;
+            }
         }
     }
 }
