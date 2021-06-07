@@ -99,6 +99,7 @@ a {
     background-color: lightgray;
     &__title {
         @include title;
+        padding-top: 2em;
     }
     &__container {
         display: flex;
@@ -107,13 +108,28 @@ a {
         &__card {
             display: flex;
             flex-direction: column;
-            width: 95%;
+            width: 90%;
             background-color: #fff;
             border-bottom: 20px;
-            margin-bottom: 1em;
+            margin-bottom: 1.5em;
+            border-radius: 15px;
             &__pic {
-                height: 250px;
+                height: 180px;
                 width: 100%;
+                object-fit: cover;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+            &__title {
+                margin: 0.6em 0;
+                color: black;
+                padding-left: 1em;
+            }
+            &__subtitle {
+                margin-top: 0;
+                margin-bottom: 0.5em;
+                color: black;
+                padding-left: 1em;
             }
         }
     }

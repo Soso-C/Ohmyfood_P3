@@ -101,6 +101,7 @@ a {
   font-size: 1.4em;
   padding-left: 1em;
   padding-bottom: 0.5em;
+  padding-top: 2em;
 }
 .restaurant__container {
   display: flex;
@@ -110,14 +111,29 @@ a {
 .restaurant__container__card {
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: 90%;
   background-color: #fff;
   border-bottom: 20px;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
+  border-radius: 15px;
 }
 .restaurant__container__card__pic {
-  height: 250px;
+  height: 180px;
   width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurant__container__card__title {
+  margin: 0.6em 0;
+  color: black;
+  padding-left: 1em;
+}
+.restaurant__container__card__subtitle {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: black;
+  padding-left: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
