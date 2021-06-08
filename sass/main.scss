@@ -55,6 +55,7 @@ a {
             width: 205px;
             height: 50px;
             cursor: pointer;
+            box-shadow: $shadow;
         }
     }
 }
@@ -113,6 +114,7 @@ a {
             border-bottom: 20px;
             margin-bottom: 1.5em;
             border-radius: 15px;
+            box-shadow: $shadow;
             &__pic {
                 height: 180px;
                 width: 100%;

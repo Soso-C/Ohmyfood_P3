@@ -1,5 +1,5 @@
 /* Color Primaire / Secondaire / Tertiaire */
-/**/
+/* Box Shadow*/
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 * {
@@ -61,6 +61,7 @@ a {
   width: 205px;
   height: 50px;
   cursor: pointer;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* Fonctionnement */
@@ -117,6 +118,7 @@ a {
   border-bottom: 20px;
   margin-bottom: 1.5em;
   border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 .restaurant__container__card__pic {
   height: 180px;
