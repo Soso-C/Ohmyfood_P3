@@ -6,6 +6,7 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* Mixin title h2 main page */
 a {
   text-decoration: none;
 }
@@ -125,6 +126,7 @@ a {
   border-top-right-radius: 15px;
 }
 .restaurant__container__card__title {
+  font-size: 1.05em;
   margin: 0.6em 0;
   color: black;
   padding-left: 1em;
