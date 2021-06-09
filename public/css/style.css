@@ -192,4 +192,71 @@ li {
   font-weight: bold;
 }
 
+/* 2nd Partie */
+.head_rest {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1em;
+}
+.head_rest .return_page {
+  color: gray;
+  font-size: 1.5em;
+  margin-left: 0.2em;
+}
+.head_rest .logo_header {
+  margin: 0 auto;
+}
+
+.home_pic .img_main {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.menu {
+  background-color: lightgray;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding-top: 1em;
+}
+.menu__header {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.menu__header__title {
+  font-family: "shrikhand";
+  font-size: 1.9em;
+}
+.menu__header i {
+  font-size: 1.5em;
+}
+.menu__container__title {
+  padding-left: 1em;
+  text-transform: uppercase;
+}
+.menu__container__element {
+  height: 80px;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.menu__container__element__title {
+  margin: 0;
+  padding: 0;
+}
+.menu__container__element .subtitle_price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+.menu__container__element .subtitle_price p {
+  margin: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
