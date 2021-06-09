@@ -5,6 +5,11 @@ a {
     text-decoration: none;
 }
 
+ul,
+li {
+    list-style-type: none;
+}
+
 
 /* Header */
 
@@ -81,6 +86,20 @@ a {
         border-radius: 30px;
         margin: 0 auto;
         margin-bottom: 2em;
+        &__number {
+            display: flex;
+            height: 22px;
+            font-size: 0.8em;
+            width: 22px;
+            color: #fff;
+            background-color: $color_pri;
+            border-radius: 50%;
+            padding-right: 1;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            margin-top: 0.2em;
+        }
         &__icon {
             height: 16px;
             width: 16px;
@@ -98,6 +117,7 @@ a {
 
 .restaurant {
     background-color: lightgray;
+    padding-bottom: 1em;
     &__title {
         @include title;
         padding-top: 2em;
@@ -135,5 +155,37 @@ a {
                 padding-left: 1em;
             }
         }
+    }
+}
+
+.footer_main {
+    background-color: rgb(70, 68, 68);
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    h4 {
+        font-size: 1.1em;
+        padding-left: 18px;
+        color: #fff;
+        font-family: "shrikhand";
+        margin-top: 1em;
+    }
+    ul {
+        padding-left: 18px;
+        margin: 0;
+    }
+    i,
+    a {
+        color: #fff;
+    }
+    li {
+        margin-bottom: 0.3em;
+    }
+    &__link1 {
+        margin-left: 1em;
+        font-weight: bold;
+    }
+    &__link2 {
+        margin-left: 0.55em;
+        font-weight: bold;
     }
 }

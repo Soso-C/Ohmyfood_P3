@@ -11,6 +11,11 @@ a {
   text-decoration: none;
 }
 
+ul,
+li {
+  list-style-type: none;
+}
+
 /* Header */
 .heading {
   text-align: center;
@@ -85,6 +90,20 @@ a {
   margin: 0 auto;
   margin-bottom: 2em;
 }
+.fonc__element__number {
+  display: flex;
+  height: 22px;
+  font-size: 0.8em;
+  width: 22px;
+  color: #fff;
+  background-color: #9356DC;
+  border-radius: 50%;
+  padding-right: 1;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 0.2em;
+}
 .fonc__element__icon {
   height: 16px;
   width: 16px;
@@ -98,6 +117,7 @@ a {
 /* Restaurant */
 .restaurant {
   background-color: lightgray;
+  padding-bottom: 1em;
 }
 .restaurant__title {
   font-size: 1.4em;
@@ -138,6 +158,38 @@ a {
   margin-bottom: 0.5em;
   color: black;
   padding-left: 1em;
+}
+
+.footer_main {
+  background-color: #464444;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+.footer_main h4 {
+  font-size: 1.1em;
+  padding-left: 18px;
+  color: #fff;
+  font-family: "shrikhand";
+  margin-top: 1em;
+}
+.footer_main ul {
+  padding-left: 18px;
+  margin: 0;
+}
+.footer_main i,
+.footer_main a {
+  color: #fff;
+}
+.footer_main li {
+  margin-bottom: 0.3em;
+}
+.footer_main__link1 {
+  margin-left: 1em;
+  font-weight: bold;
+}
+.footer_main__link2 {
+  margin-left: 0.55em;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
