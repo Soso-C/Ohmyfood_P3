@@ -262,9 +262,11 @@ li {
   align-content: center;
   margin-left: 0.5em;
   margin-right: 0.5em;
+  font-size: 0.94em;
 }
 .menu__container__element .subtitle_price p {
   margin: 0;
+  overflow: hidden;
 }
 .menu .container_btn {
   margin: 3em 0;
