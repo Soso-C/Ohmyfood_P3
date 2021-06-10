@@ -226,20 +226,20 @@ li {
         align-content: center;
         align-items: center;
         justify-content: space-between;
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
         padding-top: 1em;
         &__title {
             font-family: "shrikhand";
-            font-size: 1.9em;
+            font-size: 1.7em;
         }
         i {
-            font-size: 1.5em;
+            font-size: 1.3em;
         }
     }
     &__container {
         &__title {
-            padding-left: 1em;
+            padding-left: 1.5em;
             text-transform: uppercase;
         }
         &__element {

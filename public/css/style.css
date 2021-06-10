@@ -225,19 +225,19 @@ li {
   align-content: center;
   align-items: center;
   justify-content: space-between;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
   padding-top: 1em;
 }
 .menu__header__title {
   font-family: "shrikhand";
-  font-size: 1.9em;
+  font-size: 1.7em;
 }
 .menu__header i {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 .menu__container__title {
-  padding-left: 1em;
+  padding-left: 1.5em;
   text-transform: uppercase;
 }
 .menu__container__element {
