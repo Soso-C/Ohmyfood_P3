@@ -91,12 +91,13 @@ li {
   border-radius: 30px;
   margin: 0 auto;
   margin-bottom: 2em;
+  position: relative;
 }
 .fonc__element__number {
   display: flex;
-  height: 22px;
+  height: 23px;
   font-size: 0.8em;
-  width: 22px;
+  width: 23px;
   color: #fff;
   background-color: #9356DC;
   border-radius: 50%;
@@ -104,18 +105,30 @@ li {
   justify-content: center;
   align-content: center;
   margin-top: 0.2em;
+  position: absolute;
+  left: -12px;
 }
 .fonc__element__icon {
   height: 16px;
   width: 16px;
   color: gray;
-  margin: 0 2em;
+  margin-left: 1.9em;
+  margin-right: 1.2em;
 }
 .fonc__element__subtitle {
   font-weight: bold;
 }
 
 /* Restaurant */
+.rest_new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #b3ecb3;
+  padding: 5px;
+  color: green;
+}
+
 .restaurant {
   background-color: lightgray;
   padding-bottom: 1em;
@@ -140,6 +153,7 @@ li {
   margin-bottom: 1.5em;
   border-radius: 15px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 .restaurant__container__card__pic {
   height: 180px;
