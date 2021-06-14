@@ -21,7 +21,7 @@ li {
   text-align: center;
 }
 .heading__top {
-  margin: 15px auto;
+  margin: 0.8em auto;
 }
 .heading__top img {
   font-size: 1em;
@@ -32,6 +32,7 @@ li {
   align-items: center;
   background-color: lightgray;
   height: 45px;
+  border-top: 3px solid gray;
 }
 .heading__search i {
   margin: 0;
@@ -196,7 +197,8 @@ li {
 .head_rest {
   display: flex;
   align-items: center;
-  padding-bottom: 1em;
+  margin-bottom: 0.8em;
+  margin-top: 0.8em;
 }
 .head_rest .return_page {
   color: gray;
@@ -215,9 +217,11 @@ li {
 
 .menu {
   background-color: lightgray;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
   padding-bottom: 2em;
+  transform: translateY(-50px);
+  margin-bottom: -50px;
 }
 .menu__header {
   display: flex;
@@ -262,7 +266,7 @@ li {
   align-content: center;
   margin-left: 0.5em;
   margin-right: 0.5em;
-  font-size: 0.94em;
+  font-size: 0.9em;
 }
 .menu__container__element .subtitle_price p {
   margin: 0;
