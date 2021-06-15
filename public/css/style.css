@@ -130,6 +130,14 @@ li {
   color: green;
 }
 
+.rest_heart {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  font-size: 1.3em;
+  color: black;
+}
+
 .restaurant {
   background-color: lightgray;
   padding-bottom: 1em;
