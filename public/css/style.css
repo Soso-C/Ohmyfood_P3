@@ -16,6 +16,10 @@ li {
   list-style-type: none;
 }
 
+body {
+  margin: 0;
+}
+
 /* Header */
 .heading {
   text-align: center;
@@ -125,9 +129,9 @@ li {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #b3ecb3;
-  padding: 5px;
-  color: green;
+  background-color: #99E2D0;
+  padding: 6px;
+  color: #0e880e;
   border-radius: 5px;
 }
 
@@ -135,12 +139,12 @@ li {
   position: absolute;
   bottom: 20px;
   right: 15px;
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: black;
 }
 
 .restaurant {
-  background-color: lightgray;
+  background-color: rgba(211, 211, 211, 0.493);
   padding-bottom: 1em;
 }
 .restaurant__title {
@@ -227,10 +231,11 @@ li {
 .head_rest .return_page {
   color: gray;
   font-size: 1.5em;
-  margin-left: 0.2em;
+  margin-left: 0.5em;
 }
 .head_rest .logo_header {
   margin: 0 auto;
+  padding-right: 0.5em;
 }
 
 .home_pic .img_main {
@@ -261,7 +266,7 @@ li {
   font-size: 1.7em;
 }
 .menu__header i {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 .menu__container__title {
   padding-left: 1.5em;
