@@ -271,8 +271,11 @@ body {
     }
     &__container {
         &__title {
-            padding-left: 1.5em;
+            margin-left: 1.5em;
             text-transform: uppercase;
+            padding-bottom: 5px;
+            border-bottom: 3px solid #8cdca1;
+            width: 10%;
         }
         &__element {
             display: flex;
