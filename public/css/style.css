@@ -253,7 +253,7 @@ body {
 }
 
 .menu {
-  background-color: lightgray;
+  background-color: #f3f0f0;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
   padding-bottom: 2em;
@@ -280,7 +280,7 @@ body {
   margin-left: 1.5em;
   text-transform: uppercase;
   padding-bottom: 5px;
-  border-bottom: 3px solid #8cdca1;
+  border-bottom: 3px solid #99E2D0;
   width: 10%;
 }
 .menu__container__element {
