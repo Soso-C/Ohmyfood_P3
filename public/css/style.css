@@ -48,23 +48,24 @@ body {
   margin-left: 1em;
 }
 .heading__content {
-  background-color: rgba(211, 211, 211, 0.493);
-  padding-bottom: 2em;
+  background-color: rgba(240, 235, 235, 0.651);
+  padding-bottom: 2.5em;
 }
 .heading__content h1 {
-  font-size: 1.8em;
+  font-size: 1.7em;
   font-weight: bold;
-  padding: 0.8em 1em 0.8em 1em;
+  padding: 1em 1em 0.5em 1em;
   margin: 0;
 }
 .heading__content h3 {
   margin-top: 0;
   margin-bottom: 2em;
+  font-weight: 300;
 }
 
 .btn {
   color: #fff;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 1em;
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   border-radius: 30px;
@@ -79,11 +80,14 @@ body {
 .fonc__title {
   font-size: 1.4em;
   padding-left: 1em;
-  padding-bottom: 0.5em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  margin: 0;
 }
 .fonc__bloc {
   display: flex;
   flex-direction: column;
+  padding-bottom: 1em;
 }
 .fonc__element {
   display: flex;
@@ -127,10 +131,10 @@ body {
 /* Restaurant */
 .rest_new {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 11px;
+  right: 11px;
   background-color: #99E2D0;
-  padding: 6px;
+  padding: 7px;
   color: #0e880e;
   border-radius: 5px;
 }
@@ -138,8 +142,8 @@ body {
 .rest_heart {
   position: absolute;
   bottom: 20px;
-  right: 15px;
-  font-size: 1.5em;
+  right: 20px;
+  font-size: 1.45em;
   color: black;
 }
 
@@ -150,8 +154,9 @@ body {
 .restaurant__title {
   font-size: 1.4em;
   padding-left: 1em;
-  padding-bottom: 0.5em;
   padding-top: 2em;
+  padding-bottom: 1em;
+  margin: 0;
 }
 .restaurant__container {
   display: flex;
@@ -178,19 +183,21 @@ body {
 }
 .restaurant__container__card__title {
   font-size: 1.05em;
-  margin: 0.6em 0;
+  margin-top: 0.8em;
   color: black;
   padding-left: 1em;
+  padding-bottom: 0.2em;
 }
 .restaurant__container__card__subtitle {
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.8em;
   color: black;
   padding-left: 1em;
+  font-weight: 300;
 }
 
 .footer_main {
-  background-color: #464444;
+  background-color: #333131;
   padding-top: 0.5em;
   padding-bottom: 1em;
 }
@@ -200,6 +207,7 @@ body {
   color: #fff;
   font-family: "shrikhand";
   margin-top: 1em;
+  font-weight: 300;
 }
 .footer_main ul {
   padding-left: 18px;
@@ -214,11 +222,11 @@ body {
 }
 .footer_main__link1 {
   margin-left: 1em;
-  font-weight: bold;
+  font-weight: 500;
 }
 .footer_main__link2 {
   margin-left: 0.55em;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 /* 2nd Partie */

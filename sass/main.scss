@@ -43,24 +43,25 @@ body {
         }
     }
     &__content {
-        background-color: rgba(211, 211, 211, 0.493);
-        padding-bottom: 2em;
+        background-color: rgba(240, 235, 235, 0.651);
+        padding-bottom: 2.5em;
         h1 {
-            font-size: 1.8em;
+            font-size: 1.7em;
             font-weight: bold;
-            padding: 0.8em 1em 0.8em 1em;
+            padding: 1em 1em 0.5em 1em;
             margin: 0;
         }
         h3 {
             margin-top: 0;
             margin-bottom: 2em;
+            font-weight: 300;
         }
     }
 }
 
 .btn {
     color: #fff;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 1em;
     background: linear-gradient(180deg, $color_sec, $color_pri);
     border-radius: 30px;
@@ -81,6 +82,7 @@ body {
     &__bloc {
         display: flex;
         flex-direction: column;
+        padding-bottom: 1em;
     }
     &__element {
         display: flex;
@@ -127,10 +129,10 @@ body {
 
 .rest_new {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #99E2D0;
-    padding: 6px;
+    top: 11px;
+    right: 11px;
+    background-color: $color-ter;
+    padding: 7px;
     color: rgb(14, 136, 14);
     border-radius: 5px;
 }
@@ -138,8 +140,8 @@ body {
 .rest_heart {
     position: absolute;
     bottom: 20px;
-    right: 15px;
-    font-size: 1.5em;
+    right: 20px;
+    font-size: 1.45em;
     color: black;
 }
 
@@ -148,7 +150,6 @@ body {
     padding-bottom: 1em;
     &__title {
         @include title;
-        padding-top: 2em;
     }
     &__container {
         display: flex;
@@ -173,22 +174,25 @@ body {
             }
             &__title {
                 font-size: 1.05em;
-                margin: 0.6em 0;
+                margin-top: 0.8em;
                 color: black;
                 padding-left: 1em;
+                padding-bottom: .2em;
             }
             &__subtitle {
                 margin-top: 0;
-                margin-bottom: 0.5em;
+                margin-bottom: 0.8em;
                 color: black;
                 padding-left: 1em;
+                font-weight: 300;
             }
         }
     }
 }
 
+//  FOOTER  //
 .footer_main {
-    background-color: rgb(70, 68, 68);
+    background-color: rgb(51, 49, 49);
     padding-top: 0.5em;
     padding-bottom: 1em;
     h4 {
@@ -197,6 +201,7 @@ body {
         color: #fff;
         font-family: "shrikhand";
         margin-top: 1em;
+        font-weight: 300;
     }
     ul {
         padding-left: 18px;
@@ -211,11 +216,11 @@ body {
     }
     &__link1 {
         margin-left: 1em;
-        font-weight: bold;
+        font-weight: 500;
     }
     &__link2 {
         margin-left: 0.55em;
-        font-weight: bold;
+        font-weight: 500;
     }
 }
 
@@ -286,6 +291,7 @@ body {
             background-color: #fff;
             border-radius: 20px;
             margin: 1.5em auto;
+            // animation: apparition 0.9s ease-out;
             &__title {
                 margin-left: 0.5em;
                 margin-top: 0;
@@ -306,6 +312,20 @@ body {
                 }
             }
         }
+        // @keyframes apparition {
+        //     0% {
+        //         opacity: 0;
+        //         transform: scaleY(-50px);
+        //     }
+        //     50% {
+        //         opacity: 0.50;
+        //         transform: scaleY(-25px);
+        //     }
+        //     100% {
+        //         opacity: 1;
+        //         transform: scaleY(0);
+        //     }
+        // }
     }
     .container_btn {
         margin: 3em 0;
