@@ -291,7 +291,13 @@ body {
             background-color: #fff;
             border-radius: 20px;
             margin: 1.5em auto;
-            // animation: apparition 0.9s ease-out;
+            animation: apparition 0.8s ease-in-out;
+            &:nth-child(2) {
+                animation: apparition 1s ease-in-out;
+            }
+            &:nth-child(3) {
+                animation: apparition 1.2s ease-in-out;
+            }
             &__title {
                 margin-left: 0.5em;
                 margin-top: 0;
@@ -312,20 +318,16 @@ body {
                 }
             }
         }
-        // @keyframes apparition {
-        //     0% {
-        //         opacity: 0;
-        //         transform: scaleY(-50px);
-        //     }
-        //     50% {
-        //         opacity: 0.50;
-        //         transform: scaleY(-25px);
-        //     }
-        //     100% {
-        //         opacity: 1;
-        //         transform: scaleY(0);
-        //     }
-        // }
+        @keyframes apparition {
+            0% {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
     }
     .container_btn {
         margin: 3em 0;
