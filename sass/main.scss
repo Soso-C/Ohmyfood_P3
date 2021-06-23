@@ -70,6 +70,10 @@ body {
     height: 50px;
     cursor: pointer;
     box-shadow: $shadow;
+    transition: transform 400ms;
+    &:hover {
+        transform: scale(1.10);
+    }
 }
 
 
@@ -96,6 +100,10 @@ body {
         margin: 0 auto;
         margin-bottom: 2em;
         position: relative;
+        transition: transform 400ms;
+        &:hover {
+            transform: scale(1.03);
+        }
         &__number {
             display: flex;
             height: 23px;
@@ -151,6 +159,11 @@ body {
     }
 }
 
+.full {
+    opacity: 0;
+    background: linear-gradient(180deg, $color_sec, $color_pri);
+}
+
 @keyframes progress-heart {
     0% {
         transform: scale(0);
@@ -162,10 +175,8 @@ body {
     }
 }
 
-.full {
-    opacity: 0;
-    background: linear-gradient(180deg, $color_sec, $color_pri);
-}
+
+/* Suite restaurant */
 
 .restaurant {
     background-color: rgba(211, 211, 211, 0.493);

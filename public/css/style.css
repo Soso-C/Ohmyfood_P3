@@ -74,6 +74,10 @@ body {
   height: 50px;
   cursor: pointer;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  transition: transform 400ms;
+}
+.btn:hover {
+  transform: scale(1.1);
 }
 
 /* Fonctionnement */
@@ -101,6 +105,10 @@ body {
   margin: 0 auto;
   margin-bottom: 2em;
   position: relative;
+  transition: transform 400ms;
+}
+.fonc__element:hover {
+  transform: scale(1.03);
 }
 .fonc__element__number {
   display: flex;
@@ -151,6 +159,11 @@ body {
   animation: progress-heart 400ms ease-in-out both;
 }
 
+.full {
+  opacity: 0;
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+}
+
 @keyframes progress-heart {
   0% {
     transform: scale(0);
@@ -161,11 +174,7 @@ body {
     opacity: 1;
   }
 }
-.full {
-  opacity: 0;
-  background: linear-gradient(180deg, #FF79DA, #9356DC);
-}
-
+/* Suite restaurant */
 .restaurant {
   background-color: rgba(211, 211, 211, 0.493);
   padding-bottom: 1em;
