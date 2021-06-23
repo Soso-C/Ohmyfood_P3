@@ -112,7 +112,19 @@ body {
         position: relative;
         transition: transform 400ms;
         &:hover {
-            transform: scale(1.03);
+            animation: btnfonc 0.6s both;
+        }
+        @keyframes btnfonc {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+                background: linear-gradient(180deg, $color_sec, $color_pri);
+            }
+            100% {
+                transform: scale(1.03);
+                opacity: 0.4;
+                background: linear-gradient(180deg, $color_sec, $color_pri);
+            }
         }
         &__number {
             display: flex;
@@ -135,6 +147,9 @@ body {
             color: gray;
             margin-left: 1.9em;
             margin-right: 1.2em;
+            &:hover {
+                color: $color_pri;
+            }
         }
         &__subtitle {
             font-weight: bold;
