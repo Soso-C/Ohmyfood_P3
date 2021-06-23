@@ -70,9 +70,19 @@ body {
     height: 50px;
     cursor: pointer;
     box-shadow: $shadow;
-    transition: transform 400ms;
     &:hover {
-        transform: scale(1.10);
+        animation: btnmain 0.9s both;
+    }
+}
+
+@keyframes btnmain {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.03);
+        opacity: 0.5;
     }
 }
 
@@ -152,16 +162,17 @@ body {
     position: absolute;
     bottom: 22px;
     right: 20px;
-    font-size: 1.45em;
+    font-size: 1.5em;
     color: black;
     &:hover {
-        animation: progress-heart 400ms ease-in-out both;
+        animation: progress-heart 0.6s ease-in-out both;
     }
 }
 
 .full {
     opacity: 0;
     background: linear-gradient(180deg, $color_sec, $color_pri);
+    border-radius: 50%;
 }
 
 @keyframes progress-heart {

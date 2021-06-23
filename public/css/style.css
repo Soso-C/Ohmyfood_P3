@@ -74,12 +74,21 @@ body {
   height: 50px;
   cursor: pointer;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-  transition: transform 400ms;
 }
 .btn:hover {
-  transform: scale(1.1);
+  animation: btnmain 0.9s both;
 }
 
+@keyframes btnmain {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.03);
+    opacity: 0.5;
+  }
+}
 /* Fonctionnement */
 .fonc__title {
   font-size: 1.4em;
@@ -152,16 +161,17 @@ body {
   position: absolute;
   bottom: 22px;
   right: 20px;
-  font-size: 1.45em;
+  font-size: 1.5em;
   color: black;
 }
 .coeur:hover {
-  animation: progress-heart 400ms ease-in-out both;
+  animation: progress-heart 0.6s ease-in-out both;
 }
 
 .full {
   opacity: 0;
   background: linear-gradient(180deg, #FF79DA, #9356DC);
+  border-radius: 50%;
 }
 
 @keyframes progress-heart {
