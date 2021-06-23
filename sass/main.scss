@@ -29,9 +29,9 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: lightgray;
+        background-color: rgb(236, 235, 235);
         height: 45px;
-        border-top: 3px solid gray;
+        border-top: 3px solid #c8c8c8;
         i {
             margin: 0;
         }
@@ -137,12 +137,34 @@ body {
     border-radius: 5px;
 }
 
-.rest_heart {
+
+/* Coeur */
+
+.coeur {
     position: absolute;
-    bottom: 20px;
+    bottom: 22px;
     right: 20px;
     font-size: 1.45em;
     color: black;
+    &:hover {
+        animation: progress-heart 400ms ease-in-out both;
+    }
+}
+
+@keyframes progress-heart {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.full {
+    opacity: 0;
+    background: linear-gradient(180deg, $color_sec, $color_pri);
 }
 
 .restaurant {
