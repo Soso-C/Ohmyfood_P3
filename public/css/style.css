@@ -61,6 +61,7 @@ body {
   margin-top: 0;
   margin-bottom: 2em;
   font-weight: 300;
+  color: #525151;
 }
 
 .btn {
@@ -86,10 +87,15 @@ body {
   }
   100% {
     transform: scale(1.03);
-    opacity: 0.5;
+    opacity: 0.8;
+    box-shadow: 0px 0px 10px 0px black;
   }
 }
 /* Fonctionnement */
+.icon3 {
+  color: #9356DC;
+}
+
 .fonc__title {
   font-size: 1.4em;
   padding-left: 1em;
@@ -114,22 +120,6 @@ body {
   margin: 0 auto;
   margin-bottom: 2em;
   position: relative;
-  transition: transform 400ms;
-}
-.fonc__element:hover {
-  animation: btnfonc 0.6s both;
-}
-@keyframes btnfonc {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-    background: linear-gradient(180deg, #FF79DA, #9356DC);
-  }
-  100% {
-    transform: scale(1.03);
-    opacity: 0.4;
-    background: linear-gradient(180deg, #FF79DA, #9356DC);
-  }
 }
 .fonc__element__number {
   display: flex;
@@ -149,11 +139,13 @@ body {
 .fonc__element__icon {
   height: 16px;
   width: 16px;
-  color: gray;
   margin-left: 1.9em;
   margin-right: 1.2em;
 }
-.fonc__element__icon:hover {
+.fonc__element__icon .icor {
+  color: gray;
+}
+.fonc__element__icon .icor3 {
   color: #9356DC;
 }
 .fonc__element__subtitle {
@@ -167,7 +159,7 @@ body {
   right: 11px;
   background-color: #99E2D0;
   padding: 7px;
-  color: #0e880e;
+  color: #227b45;
   border-radius: 5px;
 }
 
@@ -335,6 +327,7 @@ body {
   padding-bottom: 5px;
   border-bottom: 3px solid #99E2D0;
   width: 10%;
+  font-weight: 300;
 }
 .menu__container__element {
   display: flex;
@@ -345,16 +338,16 @@ body {
   background-color: #fff;
   border-radius: 20px;
   margin: 1.5em auto;
-  animation: apparition 0.8s ease-in-out;
+  animation: apparition 0.8s ease-in-out both;
 }
 .menu__container__element:nth-child(2) {
-  animation: apparition 1s ease-in-out;
+  animation: apparition 1s ease-in-out both;
 }
 .menu__container__element:nth-child(3) {
-  animation: apparition 1.2s ease-in-out;
+  animation: apparition 1.2s ease-in-out both;
 }
 .menu__container__element:nth-child(4) {
-  animation: apparition 1.4s ease-in-out;
+  animation: apparition 1.4s ease-in-out both;
 }
 .menu__container__element__title {
   margin-left: 0.5em;
@@ -374,6 +367,7 @@ body {
 .menu__container__element .subtitle_price p {
   margin: 0;
   overflow: hidden;
+  font-weight: 300;
 }
 @keyframes apparition {
   0% {
