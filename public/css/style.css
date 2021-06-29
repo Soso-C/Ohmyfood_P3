@@ -150,6 +150,43 @@ body {
   font-weight: bold;
 }
 
+/* Coeur */
+.coeur {
+  position: absolute;
+  bottom: 22px;
+  right: 20px;
+  font-size: 1.5em;
+  color: black;
+}
+
+.empty {
+  opacity: 1;
+}
+.empty:hover {
+  opacity: 0;
+  color: transparent;
+}
+
+.full {
+  opacity: 0;
+  font-size: 1.5em;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.full:hover {
+  animation: progress-heart 0.8s both;
+}
+
+@keyframes progress-heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* Restaurant */
 .rest_new {
   position: absolute;
@@ -161,35 +198,6 @@ body {
   border-radius: 5px;
 }
 
-/* Coeur */
-.coeur {
-  position: absolute;
-  bottom: 22px;
-  right: 20px;
-  font-size: 1.5em;
-  color: black;
-}
-.coeur:hover {
-  animation: progress-heart 0.6s ease-in-out both;
-}
-
-.full {
-  opacity: 0;
-  background: linear-gradient(180deg, #FF79DA, #9356DC);
-  border-radius: 50%;
-}
-
-@keyframes progress-heart {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-/* Suite restaurant */
 .restaurant {
   background-color: rgba(211, 211, 211, 0.493);
   padding-bottom: 1em;
@@ -296,9 +304,10 @@ body {
 }
 
 .valid_box {
+  overflow: hidden;
   display: flex;
   position: absolute;
-  right: 0px;
+  right: -100px;
   height: 100%;
   width: 60px;
   color: white;
@@ -312,6 +321,22 @@ body {
   animation: rotate 0.6s both;
 }
 
+@keyframes deplacetext {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes deplacebox {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
 @-webkit-keyframes rotate {
   0% {
     -webkit-transform: rotate(0);
@@ -330,6 +355,26 @@ body {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(-60px);
+    transform: translateX(-60px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(-60px);
+    transform: translateX(-60px);
   }
 }
 .menu {
@@ -401,6 +446,9 @@ body {
   margin-left: 0.5em;
   margin-right: 0.5em;
   font-size: 0.9em;
+}
+.menu__container__element .subtitle_price:hover {
+  animation: slide-left 1s both;
 }
 .menu__container__element .subtitle_price p {
   margin: 0;
