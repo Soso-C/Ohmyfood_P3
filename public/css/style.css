@@ -281,6 +281,13 @@ body {
 }
 
 /* 2nd Partie */
+.test {
+  display: flex;
+}
+.test .empty {
+  position: absolute;
+}
+
 .head_rest {
   display: flex;
   align-items: center;

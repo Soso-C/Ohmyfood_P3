@@ -282,6 +282,13 @@ body {
 
 /* 2nd Partie */
 
+.test {
+    display: flex;
+    .empty {
+        position: absolute;
+    }
+}
+
 .head_rest {
     display: flex;
     align-items: center;
@@ -306,6 +313,7 @@ body {
     }
 }
 
+// Valid Box
 .valid_box {
     overflow: hidden;
     display: flex;
