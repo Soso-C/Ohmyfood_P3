@@ -232,8 +232,8 @@ body {
     opacity: 0;
     font-size: 1.50em;
     background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    // background-clip: text;
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
     &:hover {
         animation: progress-heart 0.8s both;
@@ -585,7 +585,7 @@ body {
         margin: 1em 0;
     }
     .menu__container__element {
-        width: 100%;
+        width: 300px;
         overflow: hidden;
         cursor: pointer;
     }
@@ -594,6 +594,7 @@ body {
     }
     .test {
         padding-left: 3em;
+        cursor: pointer;
     }
     .menu__header {
         justify-content: center;
