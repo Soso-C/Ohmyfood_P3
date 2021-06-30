@@ -22,7 +22,7 @@ body {
 
 .bloc_page {
   position: relative;
-  animation: opacityhome 1.8s linear;
+  animation: opacityhome 2s linear;
 }
 
 .bloc_loader {
@@ -33,7 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 100;
-  animation: rotation 1.8s linear both;
+  animation: rotation 2s linear both;
 }
 
 .loader {
@@ -70,7 +70,7 @@ body {
 }
 @keyframes opacityhome {
   0% {
-    opacity: 0.2;
+    opacity: 0;
   }
   100% {
     opacity: 1;
