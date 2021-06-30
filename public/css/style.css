@@ -96,10 +96,10 @@ body {
 }
 .heading__search i {
   margin: 0;
-  color: #444141;
+  color: #232222;
 }
 .heading__search p {
-  color: #444141;
+  color: #232222;
   font-weight: 500;
   font-size: 1em;
   margin-left: 1em;
@@ -118,7 +118,7 @@ body {
   margin-top: 0;
   margin-bottom: 2em;
   font-weight: 300;
-  color: #525151;
+  color: #232222;
 }
 
 .btn {
@@ -168,13 +168,16 @@ body {
   align-items: center;
   color: black;
   height: 75px;
-  width: 90%;
+  width: 85%;
   background-color: rgba(128, 128, 128, 0.123);
   border-radius: 30px;
   box-shadow: 0px 0px 14px 0px #00000036;
   margin: 0 auto;
   margin-bottom: 2em;
   position: relative;
+}
+.fonc__element:nth-child(3) {
+  background-color: rgba(156, 51, 251, 0.12);
 }
 .fonc__element__number {
   display: flex;
