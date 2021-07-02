@@ -16,7 +16,7 @@ body {
 
 .bloc_page {
     position: relative;
-    animation: opacityhome 2s linear;
+    animation: opacityhome 2s both;
 }
 
 .bloc_loader {
@@ -31,8 +31,8 @@ body {
 }
 
 .loader {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     display: inline-block;
     border-top: 4px solid $color_pri;
@@ -44,8 +44,8 @@ body {
     content: '';
     box-sizing: border-box;
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border-bottom: 4px solid $color_sec;
     border-left: 4px solid transparent;
@@ -388,7 +388,6 @@ body {
     color: white;
     background: $color-ter;
     // animation: slide-left 1s both;
-    // &:hover {}
     i {
         display: flex;
         align-items: center;
