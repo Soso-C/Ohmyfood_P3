@@ -370,12 +370,14 @@ body {
 }
 
 .valid_box {
+  display: none;
   overflow: hidden;
   display: flex;
   position: absolute;
   right: -60px;
   height: 100%;
   width: 60px;
+  z-index: -10;
   color: white;
   background: #99E2D0;
 }
@@ -384,7 +386,14 @@ body {
   align-items: center;
   font-size: 1.5em;
   margin: 0 auto;
-  animation: rotate 0.6s both;
+}
+
+.menu__container__element:hover .price,
+.menu__container__element:hover .valid_box {
+  animation: slide-left 1.2s both;
+}
+.menu__container__element:hover i {
+  animation: rotate 1s both;
 }
 
 @-webkit-keyframes rotate {
@@ -485,9 +494,6 @@ body {
   margin-left: 0.5em;
   margin-right: 0.5em;
   font-size: 0.9em;
-}
-.menu__container__element .subtitle_price:hover {
-  animation: slide-left 1s both;
 }
 .menu__container__element .subtitle_price p {
   margin: 0;
