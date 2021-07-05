@@ -412,10 +412,7 @@ body {
         animation: rotate 1s both;
     }
     .subtitle_price p {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 220px;
-        white-space: nowrap;
+        animation: txtoff 1s both;
     }
 }
 
@@ -438,6 +435,36 @@ body {
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
+    }
+}
+
+@keyframes txtoff {
+    0% {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: auto;
+        white-space: nowrap;
+    }
+    100% {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 220px;
+        white-space: nowrap;
+    }
+}
+
+@-webkit-keyframes txtoff {
+    0% {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: auto;
+        white-space: nowrap;
+    }
+    100% {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 240px;
+        white-space: nowrap;
     }
 }
 
