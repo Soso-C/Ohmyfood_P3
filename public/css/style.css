@@ -70,7 +70,7 @@ body {
 }
 @keyframes opacityhome {
   0% {
-    opacity: 0;
+    opacity: 0.3;
   }
   100% {
     opacity: 1;
@@ -235,7 +235,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .full:hover {
-  animation: progress-heart 0.8s both;
+  animation: progress-heart 1s both;
 }
 
 @keyframes progress-heart {
@@ -377,7 +377,6 @@ body {
   right: -60px;
   height: 100%;
   width: 60px;
-  z-index: -10;
   color: white;
   background: #99E2D0;
 }
@@ -394,6 +393,12 @@ body {
 }
 .menu__container__element:hover i {
   animation: rotate 1s both;
+}
+.menu__container__element:hover .subtitle_price p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 220px;
+  white-space: nowrap;
 }
 
 @-webkit-keyframes rotate {
