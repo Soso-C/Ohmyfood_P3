@@ -254,7 +254,7 @@ body {
   background-color: #99E2D0;
   padding: 7px;
   color: #227b45;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .restaurant {
@@ -467,7 +467,7 @@ body {
   }
 }
 .menu {
-  background-color: #f3f0f0;
+  background-color: #f5f2f2;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
   padding-bottom: 2em;
