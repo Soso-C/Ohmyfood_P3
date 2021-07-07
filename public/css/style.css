@@ -244,7 +244,7 @@ body {
 
 .btn {
   color: #fff;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1em;
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   border-radius: 30px;
@@ -319,7 +319,7 @@ body {
   color: #9356DC;
 }
 .fonc__element__subtitle {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 /* Coeur */
