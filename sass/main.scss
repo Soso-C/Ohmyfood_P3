@@ -1,3 +1,4 @@
+@import "./utils/animations";
 @import "./utils/variables";
 @import "./base/typography";
 @import "./utils/mixins";
@@ -49,27 +50,6 @@ body {
     border-radius: 50%;
     border-bottom: 4px solid $color_sec;
     border-left: 4px solid transparent;
-}
-
-@keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-        opacity: 1;
-    }
-    100% {
-        transform: rotate(360deg);
-        opacity: 0;
-        z-index: -100;
-    }
-}
-
-@keyframes opacityhome {
-    0% {
-        opacity: 0.3;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 
@@ -132,16 +112,6 @@ body {
     box-shadow: $shadow;
     &:hover {
         animation: btnmain 0.9s both;
-    }
-}
-
-@keyframes btnmain {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.8;
-        box-shadow: 0px 0px 10px 0px rgb(0 0 0);
     }
 }
 
@@ -245,15 +215,10 @@ body {
     -webkit-text-fill-color: transparent;
     &:hover {
         animation: progress-heart 1s both;
-    }
-}
-
-@keyframes progress-heart {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
+        .empty {
+            opacity: 0;
+            color: transparent;
+        }
     }
 }
 
@@ -350,7 +315,7 @@ body {
 }
 
 
-/* 2nd Partie */
+/*-------------------- 2EME PARTIE ---------------------------*/
 
 .test {
     display: flex;
@@ -403,6 +368,7 @@ body {
     }
 }
 
+// Applique les animations au survol
 .menu__container__element:hover {
     .price,
     .valid_box {
@@ -416,80 +382,7 @@ body {
     }
 }
 
-@-webkit-keyframes rotate {
-    0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rotate {
-    0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes txtoff {
-    0% {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: auto;
-        white-space: nowrap;
-    }
-    100% {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 220px;
-        white-space: nowrap;
-    }
-}
-
-@-webkit-keyframes txtoff {
-    0% {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: auto;
-        white-space: nowrap;
-    }
-    100% {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 240px;
-        white-space: nowrap;
-    }
-}
-
-@-webkit-keyframes slide-left {
-    0% {
-        -webkit-transform: translateX(0px);
-        transform: translateX(0px);
-    }
-    100% {
-        -webkit-transform: translateX(-60px);
-        transform: translateX(-60px);
-    }
-}
-
-@keyframes slide-left {
-    0% {
-        -webkit-transform: translateX(0px);
-        transform: translateX(0px);
-    }
-    100% {
-        -webkit-transform: translateX(-60px);
-        transform: translateX(-60px);
-    }
-}
-
+// Menu
 .menu {
     background-color: #f5f2f2;
     border-top-right-radius: 40px;
@@ -565,7 +458,7 @@ body {
                 }
             }
         }
-        // Delay animation
+        // Delay animation escalier
         .d1 {
             animation-delay: 0.1s;
         }
@@ -595,16 +488,6 @@ body {
         }
         .d10 {
             animation-delay: 1s;
-        }
-        @keyframes apparition {
-            0% {
-                opacity: 0;
-                transform: translateY(40px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0px);
-            }
         }
     }
     .container_btn {

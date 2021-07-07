@@ -1,0 +1,160 @@
+// Loader 
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+        z-index: -100;
+    }
+}
+
+@keyframes opacityhome {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+// Anim Button
+@keyframes btnmain {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.8;
+        box-shadow: 0px 0px 10px 0px rgb(0 0 0);
+    }
+}
+
+@-webkit-keyframes btnmain {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.8;
+        box-shadow: 0px 0px 10px 0px rgb(0 0 0);
+    }
+}
+
+// Anim Coeur
+@keyframes progress-heart {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes progress-heart {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+// Anim rotate Icon validbox
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+// Slide left Validbox 
+@-webkit-keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    100% {
+        -webkit-transform: translateX(-60px);
+        transform: translateX(-60px);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    100% {
+        -webkit-transform: translateX(-60px);
+        transform: translateX(-60px);
+    }
+}
+
+//Text hidden animation 
+@keyframes txtoff {
+    0% {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    100% {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 220px;
+        white-space: nowrap;
+    }
+}
+
+@-webkit-keyframes txtoff {
+    0% {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: auto;
+        white-space: nowrap;
+    }
+    100% {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 240px;
+        white-space: nowrap;
+    }
+}
+
+// Anim escalier page html annex 
+@keyframes apparition {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes apparition {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
