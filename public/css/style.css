@@ -498,6 +498,7 @@ body {
 
 .valid_box {
   display: none;
+  overflow: hidden;
   display: flex;
   position: absolute;
   right: -60px;
