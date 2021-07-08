@@ -10,7 +10,26 @@
     z-index: -100;
   }
 }
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+    z-index: -100;
+  }
+}
 @keyframes opacityhome {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes opacityhome {
   0% {
     opacity: 0.3;
   }
@@ -479,7 +498,6 @@ body {
 
 .valid_box {
   display: none;
-  overflow: hidden;
   display: flex;
   position: absolute;
   right: -60px;
