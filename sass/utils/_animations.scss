@@ -81,6 +81,24 @@
     }
 }
 
+@keyframes downgrade-heart {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes downgrade-heart {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 // Anim rotate Icon validbox
 @-webkit-keyframes rotate {
     0% {

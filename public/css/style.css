@@ -71,6 +71,22 @@
     opacity: 1;
   }
 }
+@keyframes downgrade-heart {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes downgrade-heart {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @-webkit-keyframes rotate {
   0% {
     -webkit-transform: rotate(0);
@@ -350,27 +366,18 @@ body {
   color: black;
 }
 
-.empty {
-  opacity: 1;
-}
-.empty:hover {
-  opacity: 0;
-  color: transparent;
-}
-
 .full {
   opacity: 0;
-  font-size: 1.5em;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.full:hover {
-  animation: progress-heart 1s both;
+
+.coeur_box:hover .empty {
+  animation: downgrade-heart 1s both;
 }
-.full:hover .empty {
-  opacity: 0;
-  color: transparent;
+.coeur_box:hover .full {
+  animation: progress-heart 1s both;
 }
 
 /* Restaurant */
@@ -467,10 +474,10 @@ body {
 }
 
 /*-------------------- 2EME PARTIE ---------------------------*/
-.test {
+.coeur_box {
   display: flex;
 }
-.test .empty {
+.coeur_box .empty {
   position: absolute;
 }
 
