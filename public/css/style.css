@@ -474,10 +474,10 @@ body {
 }
 
 /*-------------------- 2EME PARTIE ---------------------------*/
-.coeur_box {
+.menu__header .coeur_box {
   display: flex;
 }
-.coeur_box .empty {
+.menu__header .coeur_box .empty {
   position: absolute;
 }
 
@@ -680,7 +680,7 @@ body {
     margin-left: 0.2em;
   }
 
-  .test {
+  .menu__header .coeur_box {
     padding-left: 3em;
     cursor: pointer;
   }

@@ -299,7 +299,7 @@
     }
     /*-------------------- 2EME PARTIE ---------------------------*/
     
-    .coeur_box {
+    .menu__header .coeur_box {
         display: flex;
         .empty {
             position: absolute;
@@ -521,7 +521,7 @@
         .menu__container__title {
             margin-left: 0.2em;
         }
-        .test {
+        .menu__header .coeur_box {
             padding-left: 3em;
             cursor: pointer;
         }
