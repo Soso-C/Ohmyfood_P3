@@ -643,6 +643,10 @@ body {
   .fonc__element {
     width: 30%;
   }
+  .fonc__element:hover {
+    transform: scale(1.03);
+    transition: ease 0.3s;
+  }
 
   .restaurant__container {
     display: flex;
@@ -655,6 +659,10 @@ body {
     width: 45%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .restaurant__container__card:hover {
+    transform: scale(1.03);
+    transition: ease 0.3s;
   }
 
   .footer_main {

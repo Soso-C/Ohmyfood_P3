@@ -490,6 +490,10 @@
         }
         .fonc__element {
             width: 30%;
+            &:hover {
+                transform: scale(1.03);
+                transition: ease 0.3s;
+            }
         }
         .restaurant__container {
             display: flex;
@@ -501,6 +505,10 @@
             width: 45%;
             margin-left: auto;
             margin-right: auto;
+            &:hover {
+                transform: scale(1.03);
+                transition: ease 0.3s;
+            }
         }
         .footer_main {
             display: flex;
